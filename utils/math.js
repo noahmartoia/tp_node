@@ -87,3 +87,14 @@ export const intToString = function (string){
 
 }
 
+export const objKey = function (obj){
+    const tmb = [];
+    for (let i = 0; i < obj.length; i++) {
+        tmb.push(obj[i].name)
+    }
+    return tmb;
+}
+
+export const triNumber = function (tmb){
+    return tmb.sort((e,a) => e-a)
+}
