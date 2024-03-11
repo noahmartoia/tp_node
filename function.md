@@ -1,8 +1,4 @@
-Créez un tableau contenant des nombres aléatoires. Écrivez un programme qui calcule la valeur minimale et la valeur maximale du tableau et les affiche à la console.
-
-1 Créez un tableau contenant des phrases. Écrivez un programme qui cherche la phrase la plus longue du tableau et l'affiche à la console.
-
-Écrivez un programme Node.js qui lit un fichier et imprime son contenu dans la console.
+1 Écrivez un programme Node.js qui lit un fichier et imprime son contenu dans la console.
 
 Écrivez un programme Node.js qui lit un fichier, modifie son contenu et réécrit le contenu modifié dans le fichier.
 

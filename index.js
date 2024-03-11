@@ -70,3 +70,14 @@ const mois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','
 console.log(mois[2]);
 //vue que on demende le 3eme element j'ai mis [2] car la valeur 0 compte
 
+const valeur = [1,454,2345,456748934876,3,0,-4];
+console.log(Math.max(...valeur),Math.min(...valeur));
+
+const length = ['salut',"longgggggggggggggggggggg",'petit'];
+let long=length[0];
+for (let i = 0; i < length.length; i++) {
+    if(length[i].length>long.length){
+        long=length[i];
+    }
+}
+console.log(long)
