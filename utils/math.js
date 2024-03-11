@@ -67,7 +67,7 @@ export const intToString = function (string){
     if(string.length===1){
         for (let i = 0; i < lettre1.length; i++) {
             if(string[0]==i){
-                return lettre1[i-1]
+                return lettre1[i]
             }
         }
     }
@@ -96,5 +96,61 @@ export const objKey = function (obj){
 }
 
 export const triNumber = function (tmb){
-    return tmb.sort((e,a) => e-a)
+    return tmb.sort((e,a) => e-a).reverse()
+}
+
+export const voyelleToMaj = function (tmb){
+    tmb.split('')
+    const voyelle = ["a","e","y","u","i","o"];
+    const newtmb = [];
+    let verif = 0;
+    for (let i = 0; i < tmb.length; i++) {
+        for (let j = 0; j < voyelle.length; j++) {
+            if(tmb[i]===voyelle[j]){
+                verif++;
+            }
+        }
+        if(verif===0){
+            newtmb.push(tmb[i]);
+        }else{
+            newtmb.push(tmb[i].toUpperCase());
+            verif=0;
+        }
+    }
+    return newtmb.join('');
+}
+
+export const count = function (tmb){
+    tmb.split('')
+    const voyelle = ["a","e","y","u","i","o"];
+    const newtmb = [];
+    let countV = 0;
+    for (let i = 0; i < tmb.length; i++) {
+        for (let j = 0; j < voyelle.length; j++) {
+            if(tmb[i]===voyelle[j]){
+                countV++;
+            }
+        }
+    }
+    return countV;
+}
+export const consonneToMaj = function (tmb){
+    tmb.split('')
+    const voyelle = ["z","r","t","p","q","s","d","f","g","h","j","k","l","m","w","x","c","v","b","n"];
+    const newtmb = [];
+    let verif = 0;
+    for (let i = 0; i < tmb.length; i++) {
+        for (let j = 0; j < voyelle.length; j++) {
+            if(tmb[i]===voyelle[j]){
+                verif++;
+            }
+        }
+        if(verif===0){
+            newtmb.push(tmb[i]);
+        }else{
+            newtmb.push(tmb[i].toUpperCase());
+            verif=0;
+        }
+    }
+    return newtmb.join('');
 }
