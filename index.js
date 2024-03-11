@@ -56,3 +56,17 @@ const fruit = ["pomme","poire","kiwi","banane",'raisin'];
 fruit.push('orange');
 
 console.log("fruit");
+
+const note = [1,5,20,10,17];
+console.log(note.reduce((accumulator, currentValue) => accumulator + currentValue,initialValue,)/note.length);
+
+const oiseau = ["pie","rouge george"];
+console.log(oiseau.includes('pie'))
+
+const pays = ['france',"canada",'suisse','belgique'];
+console.log(pays.sort())
+
+const mois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
+console.log(mois[2]);
+//vue que on demende le 3eme element j'ai mis [2] car la valeur 0 compte
+
