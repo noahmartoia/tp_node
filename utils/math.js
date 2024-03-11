@@ -41,3 +41,49 @@ export const voyelle = function (tmb){
     }
     return newtmb.join('');
 }
+export const alphabet = function (tmb){
+    return tmb.sort();
+}
+
+export const intToString = function (string){
+    if(string=='100'){
+        return 'cent';
+    }else if(string=='11'){
+        return 'onze'
+    }else if(string=='12'){
+        return 'douze'
+    }else if(string=='13'){
+        return 'treise'
+    }else if(string=='14'){
+        return 'quatorze'
+    }else if(string=='15'){
+        return 'quinze'
+    }else if(string=='16'){
+        return 'seise'
+    }
+    const lettre1 = ['',"un","deux","trois","quatre","cinq","six",'sept','huit','neuf']
+    const lettre2 = ['dix','vingt','trente','quarente',"cinquente",'soixente','soixente-dix','quatrevingth','quatrevingth-dix']
+    let lettre3 = '';
+    if(string.length===1){
+        for (let i = 0; i < lettre1.length; i++) {
+            if(string[0]==i){
+                return lettre1[i-1]
+            }
+        }
+    }
+    else if(string.length===2){
+        for (let i = 0; i < lettre2.length; i++) {
+            if(string[0]==i){
+                lettre3+=lettre2[i-1]
+            }
+        }
+        for (let i = 0; i < lettre1.length; i++) {
+            if(string[1]==i){
+                lettre3+='' + lettre1[i]
+            }
+        }
+        return lettre3;
+    }
+
+}
+
