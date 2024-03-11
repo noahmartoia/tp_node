@@ -39,5 +39,20 @@ console.log(consonneToMaj(voyelless));
 const tableau = [1,2,3,4,5,6,7,8,9,10];
 
 for (let i = 0; i < tableau.length; i++) {
-    console.log(tableau[i])
+    console.log(tableau[i]);
 }
+
+const jour = ["lundi",'mardi','mercredie','jeudi','vendredi','samedi','dimanche'];
+
+console.log(jour[0]);
+
+const pair = [2,4,6,8,10];
+const initialValue=0;
+console.log(pair.reduce((accumulator, currentValue) => accumulator + currentValue,initialValue,));
+//j'ai trouver le reduce sur la mdn
+
+const fruit = ["pomme","poire","kiwi","banane",'raisin'];
+
+fruit.push('orange');
+
+console.log("fruit");
