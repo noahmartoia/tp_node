@@ -60,6 +60,8 @@ export const intToString = function (string){
         return 'quinze'
     }else if(string=='16'){
         return 'seise'
+    }else if(string=='0'){
+        return 'zero'
     }
     const lettre1 = ['',"un","deux","trois","quatre","cinq","six",'sept','huit','neuf']
     const lettre2 = ['dix','vingt','trente','quarente',"cinquente",'soixente','soixente-dix','quatrevingth','quatrevingth-dix']
